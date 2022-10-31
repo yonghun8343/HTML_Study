@@ -1,0 +1,22 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+
+#image {
+  width: 100%;
+  height: 200%;
+  /* background-image: url("./image.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; */
+
+  background: url("./image.png") no-repeat center center fixed;
+  background-size: 10% 10%;
+}

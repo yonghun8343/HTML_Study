@@ -1,0 +1,19 @@
+a[href] {
+  font-size: 20px;
+}
+
+a[target = _blank] {
+  font-size: 40px
+}
+
+/* [class ~= example] {
+  font-size: 40px;
+} */
+
+/* button[class |= us] {
+  font-size: 40px;
+} */
+
+button[class $= sa] {
+  font-size: 40px;
+}

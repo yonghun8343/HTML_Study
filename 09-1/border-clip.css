@@ -1,0 +1,12 @@
+#clip-border {
+  background-clip: border-box;
+  border: 1px solid black;
+}
+
+#clip-padding {
+  background-clip: padding-box;
+}
+
+#clip-contet {
+  background-clip: content-box;
+}

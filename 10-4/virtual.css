@@ -1,0 +1,103 @@
+a[href] {
+  font-size: 20px;
+}
+
+/* [class ~= example] {
+  font-size: 40px;
+} */
+
+/* button[class |= us] {
+  font-size: 40px;
+} */
+
+button[class $= sa] {
+  font-size: 40px;
+}
+
+#link_box {
+  width: 100%;
+  height: 200px;
+  display: flex
+}
+
+#google:link {
+  font-size: 40px;
+  color: gray;
+}
+
+a:visited {
+  color: black;
+}
+
+/* a:hover {
+  color: white;
+} */
+
+input {
+  width: 150px;
+  height: 50px;
+  border: 2px solid #c4c4c4
+}
+
+input:focus {
+  outline: none;
+}
+
+#naver:visited {
+  font-size: 40px;
+}
+
+#naver_tbx:target {
+  background: gray;
+}
+
+input:enabled {
+  width: 300px;
+  background: white;
+}
+
+input:disabled {
+  width: 300px;
+  background-color: black;
+}
+
+input[id="chb"]:checked {
+  display: none;
+}
+
+input[id="chb"]:checked + label::after {
+  content: "v";
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  font-size: 40px;
+}
+
+input:not([type="checkbox"]) {
+  display: none;
+}
+
+div {
+  width: 100%;
+  height: 50px;
+  background: gray;
+}
+
+#divs {
+  display: none;
+  height: 500px;
+}
+
+#divs div:nth-child(2n) {
+  background: black;
+}
+
+li.new::after {
+  content: "NEW!!";
+  font-size: x-small;
+  padding: 2px 4px;
+  margin: 0 10px;
+  border-radius: 2px;
+  background: #f00;
+  color: white;
+}

@@ -1,0 +1,30 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#container {
+  width: 100px;
+  height: 100px;
+}
+
+body {
+  display: flex;
+}
+p ~ span {
+  font-size: 40px;
+}
+
+#container > #first {
+  width: 100px;
+  height: 100px;
+}
+
+#container > #second {
+  width: 100px;
+  height: 100px;
+}
