@@ -1,0 +1,46 @@
+#container {
+  width: 1000px;
+  height: 1000px;
+  margin-left: 100px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 50px;
+}
+
+#box1 {
+  background-color: greenyellow;
+  border: 1px solid transparent;
+  animation-name: shape;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+#box2 {
+  background-color: purple;
+  border: 1px solid transparent;
+  animation-name: rotate;
+  animation-duration: 3s;
+}
+
+@keyframes shape {
+  from {
+    border: 1px solid transparent;
+  }
+  to {
+    border: 1px solid black;
+    border-radius: 50%;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
