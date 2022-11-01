@@ -92,7 +92,7 @@ div {
   background: black;
 }
 
-li.new::after {
+li.new::first-letter {
   content: "NEW!!";
   font-size: x-small;
   padding: 2px 4px;
