@@ -1,4 +1,6 @@
-/* @media screen and (min-width: 800px) {
+/*
+> 화면이 800픽셀 이하일 경우 아래의 CSS 적용
+@media screen and (min-width: 800px) {
   .wrapper span {
     font-size: 2vw !important;
     color: white;
