@@ -71,5 +71,4 @@ switch(조건)
     ...
     default: 명령n
 }
-
 ```
