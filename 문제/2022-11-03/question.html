@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const name = prompt("출입자 명단은?");
+      // 1번 풀이
+      // 배열과 indexOf
+      const alpaArr = [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "s",
+        "y",
+        "x",
+        "z",
+      ];
+      if (alpaArr.indexOf(name) < 0) {
+        alert("출입이 금지 되었습니다!");
+      } else {
+        alert("출입이 가능합니다!");
+      }
+
+      // 2번 풀이
+      // 문자 비교
+      if (name.charCodeAt(0) >= 97 && name.charCodeAt(0) <= 122) {
+        alert("출입이 가능합니다!");
+      } else {
+        alert("출입이 금지 되었습니다!");
+      }
+
+      // 3번 풀이
+      // 정규표현식
+      const regex = /^[a-z]$/;
+      if (!!name && regex.test(name)) {
+        alert("출입이 가능합니다!");
+      } else {
+        alert("출입이 금지 되었습니다!");
+      }
+    </script>
+  </body>
+</html>

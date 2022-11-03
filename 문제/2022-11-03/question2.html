@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const name = prompt("출입자 명단은?");
+      const names = name.split(" ");
+      console.log(names);
+      // 1번 풀이
+      // 배열과 indexOf
+      const alpaArr = [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "s",
+        "y",
+        "x",
+      ];
+      let canWego = true;
+      for (let i = 0; i < names.length; i++) {
+        if (alpaArr.indexOf(names[i]) < 0) {
+          canWego = false;
+          break;
+        }
+      }
+      if (!canWego) {
+        alert("출입이 금지 되었습니다!");
+      } else {
+        alert("출입이 가능합니다!");
+      }
+
+      // 2번 풀이
+      // 문자 비교
+      for (let i = 0; i < names.length; i++) {
+        if (names[i] < "a" || names[i] > "z") {
+          canWego = false;
+          break;
+        }
+      }
+      names.forEach((value) => {
+        console.log(value);
+        if (value < "a" || value > "z") {
+          canWego = false;
+        }
+      });
+      if (!canWego) {
+        alert("출입이 금지 되었습니다!");
+      } else {
+        console.log(canWego);
+        alert("출입이 가능합니다!");
+      }
+
+      // 3번 풀이
+      // 정규표현식
+      const regex = /^[a-z]$/;
+      for (let i = 0; i < names.length; i++) {
+        if (!regex.test(names[i])) {
+          canWego = false;
+          break;
+        }
+      }
+      if (!canWego) {
+        alert("출입이 금지 되었습니다!");
+      } else {
+        alert("출입이 가능합니다!");
+      }
+    </script>
+  </body>
+</html>

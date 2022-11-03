@@ -74,4 +74,9 @@ now4.setMinutes(30);
 now4.setSeconds(00);
 now4.setMilliseconds(500);
 
-const user = ["김영훈", "김일훈", "김이훈", "김삼훈"];
+// 오늘로 부터 입력받은 몇일이 지난 날의 날짜를 계산해 주세요
+
+const date = new Date();
+const value = prompt("일을 입력 해 주세요");
+date.setDate(value);
+alert(date.toLocaleString());
