@@ -10,9 +10,9 @@
     <script>
       const name = prompt("출입자 명단은?");
       const names = name.split(" ");
-      console.log(names);
-      // 1번 풀이
-      // 배열과 indexOf
+      let canWego = true;
+      1번 풀이
+      배열과 indexOf
       const alpaArr = [
         "a",
         "b",
@@ -41,7 +41,6 @@
         "y",
         "x",
       ];
-      let canWego = true;
       for (let i = 0; i < names.length; i++) {
         if (alpaArr.indexOf(names[i]) < 0) {
           canWego = false;
