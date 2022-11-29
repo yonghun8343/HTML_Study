@@ -29,3 +29,17 @@
   font-size: 3vw;
   color: white;
 }
+
+body {
+  background-color: black;
+}
+#span2 {
+  font-size: 40px;
+  color: white;
+  opacity: 0.5;
+}
+
+#span2:hover {
+  color: orange;
+  /* opacity: 1; */
+}
